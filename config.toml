@@ -1,0 +1,5 @@
+baseURL = "https://hugo-ml-digest.netlify.app/"   # update after first deploy
+languageCode = "en-us"
+title = "Machine‑Learning Digest"
+theme = "PaperMod"
+paginate = 20
