@@ -1,8 +1,0 @@
----
-title: "$5000 AI Course for FREE | App Development | #technology #artificialintelligence #education #AI"
-date: 2025-04-18T09:49:09.750Z
-source: video
-link: "https://www.youtube.com/watch?v=FgHvOaEK3gQ"
-tags: ["video","ml"]
----
-ka ye AI Course meh tumhe FREE me de raha hu! Aur tum is se seekh ke mahine ke 4 se 5 lakh tak kama sakte ho! Reel save ...
