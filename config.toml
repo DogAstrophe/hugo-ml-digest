@@ -1,5 +1,23 @@
-baseURL = "https://hugo-ml-digest.netlify.app/"   # update after first deploy
+baseURL = "/"
 languageCode = "en-us"
-title = "Machine‑Learning Digest"
+title = "My Research Digest"
 theme = "PaperMod"
-paginate = 20
+
+[params]
+  defaultTheme = "dark"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+
+[menu]
+  [[menu.main]]
+    identifier = "papers"
+    name = "Papers"
+    url = "/paper/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "videos"
+    name = "Videos"
+    url = "/video/"
+    weight = 2
