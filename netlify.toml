@@ -1,6 +1,8 @@
 [build]
   publish = "public"
-  command = "hugo"
+  command = "hugo --minify"
 
 [context.production.environment]
-  HUGO_VERSION = "0.119.0"
+  HUGO_VERSION = "0.125.4"
+  HUGO_THEME = "PaperMod"
+  HUGO_ENV = "production"
