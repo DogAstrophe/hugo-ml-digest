@@ -1,13 +1,13 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "My Research Digest"
+title = "AI Digest"
 theme = "PaperMod"
 
 [params]
-  defaultTheme = "dark"
+  defaultTheme = "auto"
   ShowReadingTime = true
-  ShowShareButtons = true
   ShowPostNavLinks = true
+  ShowShareButtons = true
 
 [menu]
   [[menu.main]]
