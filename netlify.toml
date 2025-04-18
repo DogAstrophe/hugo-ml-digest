@@ -3,6 +3,4 @@
   command = "hugo --minify"
 
 [context.production.environment]
-  HUGO_VERSION = "0.125.7"
-  HUGO_THEME = "PaperMod"
-  HUGO_ENV = "production"
+  HUGO_VERSION = "0.145.0"
