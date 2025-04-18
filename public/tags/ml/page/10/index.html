@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Ml | AI Digest</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="/tags/ml/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="/tags/ml/index.xml">
+<link rel="alternate" hreflang="en" href="/tags/ml/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="/tags/ml/">
+  <meta property="og:site_name" content="AI Digest">
+  <meta property="og:title" content="Ml">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ml">
+<meta name="twitter:description" content="">
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="/" accesskey="h" title="AI Digest (Alt + H)">AI Digest</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/paper/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="/video/" title="Videos">
+                    <span>Videos</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    Ml
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">MIB: A Mechanistic Interpretability Benchmark
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>How can we know whether new mechanistic interpretability methods achieve real improvements? In pursuit of meaningful and lasting evaluation standards, we propose MIB, a benchmark with two tracks spanning four tasks and five models. MIB favors methods that precisely and concisely recover relevant causal pathways or specific causal variables in neural language models. The circuit localization track compares methods that locate the model components - and connections between them - most important for performing a task (e.g., attribution patching or information flow routes). The causal variable localization track compares methods that featurize a hidden vector, e.g., sparse autoencoders (SAEs) or distributed alignment search (DAS), and locate model features for a causal variable relevant to the task. Using MIB, we find that attribution and mask optimization methods perform best on circuit localization. For causal variable localization, we find that the supervised DAS method performs best, while SAE features are not better than neurons, i.e., standard dimensions of hidden vectors. These findings illustrate that MIB enables meaningful comparisons of methods, and increases our confidence that there has been real progress in the field.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.186 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to MIB: A Mechanistic Interpretability Benchmark" href="/paper/mib-a-mechanistic-interpretability-benchmark-1744971981186-527994/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Novel Demonstration Generation with Gaussian Splatting Enables Robust One-Shot Manipulation
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Visuomotor policies learned from teleoperated demonstrations face challenges such as lengthy data collection, high costs, and limited data diversity. Existing approaches address these issues by augmenting image observations in RGB space or employing Real-to-Sim-to-Real pipelines based on physical simulators. However, the former is constrained to 2D data augmentation, while the latter suffers from imprecise physical simulation caused by inaccurate geometric reconstruction. This paper introduces RoboSplat, a novel method that generates diverse, visually realistic demonstrations by directly manipulating 3D Gaussians. Specifically, we reconstruct the scene through 3D Gaussian Splatting (3DGS), directly edit the reconstructed scene, and augment data across six types of generalization with five techniques: 3D Gaussian replacement for varying object types, scene appearance, and robot embodiments; equivariant transformations for different object poses; visual attribute editing for various lighting conditions; novel view synthesis for new camera perspectives; and 3D content generation for diverse object types. Comprehensive real-world experiments demonstrate that RoboSplat significantly enhances the generalization of visuomotor policies under diverse disturbances. Notably, while policies trained on hundreds of real-world demonstrations with additional 2D data augmentation achieve an average success rate of 57.2%, RoboSplat attains 87.8% in one-shot settings across six types of generalization in the real world.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.185 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Novel Demonstration Generation with Gaussian Splatting Enables Robust One-Shot Manipulation" href="/paper/novel-demonstration-generation-with-gaussian-splatting-enables-robust-one-shot-manipulation-1744971981185-908852/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">ODHSR: Online Dense 3D Reconstruction of Humans and Scenes from Monocular Videos
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Creating a photorealistic scene and human reconstruction from a single monocular in-the-wild video figures prominently in the perception of a human-centric 3D world. Recent neural rendering advances have enabled holistic human-scene reconstruction but require pre-calibrated camera and human poses, and days of training time. In this work, we introduce a novel unified framework that simultaneously performs camera tracking, human pose estimation and human-scene reconstruction in an online fashion. 3D Gaussian Splatting is utilized to learn Gaussian primitives for humans and scenes efficiently, and reconstruction-based camera tracking and human pose estimation modules are designed to enable holistic understanding and effective disentanglement of pose and appearance. Specifically, we design a human deformation module to reconstruct the details and enhance generalizability to out-of-distribution poses faithfully. Aiming to learn the spatial correlation between human and scene accurately, we introduce occlusion-aware human silhouette rendering and monocular geometric priors, which further improve reconstruction quality. Experiments on the EMDB and NeuMan datasets demonstrate superior or on-par performance with existing methods in camera tracking, human pose estimation, novel view synthesis and runtime. Our project page is at https://eth-ait.github.io/ODHSR.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.186 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to ODHSR: Online Dense 3D Reconstruction of Humans and Scenes from Monocular Videos" href="/paper/odhsr-online-dense-3d-reconstruction-of-humans-and-scenes-from-monocular-videos-1744971981186-504009/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">PCBEAR: Pose Concept Bottleneck for Explainable Action Recognition
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Human action recognition (HAR) has achieved impressive results with deep learning models, but their decision-making process remains opaque due to their black-box nature. Ensuring interpretability is crucial, especially for real-world applications requiring transparency and accountability. Existing video XAI methods primarily rely on feature attribution or static textual concepts, both of which struggle to capture motion dynamics and temporal dependencies essential for action understanding. To address these challenges, we propose Pose Concept Bottleneck for Explainable Action Recognition (PCBEAR), a novel concept bottleneck framework that introduces human pose sequences as motion-aware, structured concepts for video action recognition. Unlike methods based on pixel-level features or static textual descriptions, PCBEAR leverages human skeleton poses, which focus solely on body movements, providing robust and interpretable explanations of motion dynamics. We define two types of pose-based concepts: static pose concepts for spatial configurations at individual frames, and dynamic pose concepts for motion patterns across multiple frames. To construct these concepts, PCBEAR applies clustering to video pose sequences, allowing for automatic discovery of meaningful concepts without manual annotation. We validate PCBEAR on KTH, Penn-Action, and HAA500, showing that it achieves high classification performance while offering interpretable, motion-driven explanations. Our method provides both strong predictive performance and human-understandable insights into the model’s reasoning process, enabling test-time interventions for debugging and improving model behavior.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.186 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to PCBEAR: Pose Concept Bottleneck for Explainable Action Recognition" href="/paper/pcbear-pose-concept-bottleneck-for-explainable-action-recognition-1744971981186-67531/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Perception Encoder: The best visual embeddings are not at the output of the network
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>We introduce Perception Encoder (PE), a state-of-the-art encoder for image and video understanding trained via simple vision-language learning. Traditionally, vision encoders have relied on a variety of pretraining objectives, each tailored to specific downstream tasks such as classification, captioning, or localization. Surprisingly, after scaling our carefully tuned image pretraining recipe and refining with our robust video data engine, we find that contrastive vision-language training alone can produce strong, general embeddings for all of these downstream tasks. There is only one caveat: these embeddings are hidden within the intermediate layers of the network. To draw them out, we introduce two alignment methods, language alignment for multimodal language modeling, and spatial alignment for dense prediction. Together with the core contrastive checkpoint, our PE family of models achieves state-of-the-art performance on a wide variety of tasks, including zero-shot image and video classification and retrieval; document, image, and video Q&amp;A; and spatial tasks such as detection, depth estimation, and tracking. To foster further research, we are releasing our models, code, and a novel dataset of synthetically and human-annotated videos.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.185 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Perception Encoder: The best visual embeddings are not at the output of the network" href="/paper/perception-encoder-the-best-visual-embeddings-are-not-at-the-output-of-the-network-1744971981185-330610/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">PerceptionLM: Open-Access Data and Models for Detailed Visual Understanding
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Vision-language models are integral to computer vision research, yet many high-performing models remain closed-source, obscuring their data, design and training recipe. The research community has responded by using distillation from black-box models to label training data, achieving strong benchmark results, at the cost of measurable scientific progress. However, without knowing the details of the teacher model and its data sources, scientific progress remains difficult to measure. In this paper, we study building a Perception Language Model (PLM) in a fully open and reproducible framework for transparent research in image and video understanding. We analyze standard training pipelines without distillation from proprietary models and explore large-scale synthetic data to identify critical data gaps, particularly in detailed video understanding. To bridge these gaps, we release 2.8M human-labeled instances of fine-grained video question-answer pairs and spatio-temporally grounded video captions. Additionally, we introduce PLM-VideoBench, a suite for evaluating challenging video understanding tasks focusing on the ability to reason about &#34;what&#34;, &#34;where&#34;, &#34;when&#34;, and &#34;how&#34; of a video. We make our work fully reproducible by providing data, training recipes, code &amp; models.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.185 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to PerceptionLM: Open-Access Data and Models for Detailed Visual Understanding" href="/paper/perceptionlm-open-access-data-and-models-for-detailed-visual-understanding-1744971981185-606679/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Quantum algorithm for solving nonlinear differential equations based on physics-informed effective Hamiltonians
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>We propose a distinct approach to solving linear and nonlinear differential equations (DEs) on quantum computers by encoding the problem into ground states of effective Hamiltonian operators. Our algorithm relies on constructing such operators in the Chebyshev space, where an effective Hamiltonian is a sum of global differential and data constraints. Once the effective Hamiltonian is formed, solutions of differential equations can be obtained using the ground state preparation techniques (e.g. imaginary-time evolution and quantum singular value transformation), bypassing variational search. Unlike approaches based on discrete grids, the algorithm enables evaluation of solutions beyond fixed grid points and implements constraints in the physics-informed way. Our proposal inherits the best traits from quantum machine learning-based DE solving (compact basis representation, automatic differentiation, nonlinearity) and quantum linear algebra-based approaches (fine-grid encoding, provable speed-up for state preparation), offering a robust strategy for quantum scientific computing in the early fault-tolerant era.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.186 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Quantum algorithm for solving nonlinear differential equations based on physics-informed effective Hamiltonians" href="/paper/quantum-algorithm-for-solving-nonlinear-differential-equations-based-on-physics-informed-effective-hamiltonians-1744971981185-280027/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Readable Twins of Unreadable Models
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Creating responsible artificial intelligence (AI) systems is an important issue in contemporary research and development of works on AI. One of the characteristics of responsible AI systems is their explainability. In the paper, we are interested in explainable deep learning (XDL) systems. On the basis of the creation of digital twins of physical objects, we introduce the idea of creating readable twins (in the form of imprecise information flow models) for unreadable deep learning models. The complete procedure for switching from the deep learning model (DLM) to the imprecise information flow model (IIFM) is presented. The proposed approach is illustrated with an example of a deep learning classification model for image recognition of handwritten digits from the MNIST data set.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.186 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Readable Twins of Unreadable Models" href="/paper/readable-twins-of-unreadable-models-1744971981186-429482/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Role of AI in Predictive Modeling #ai #artificialintelligence #machinelearning #aiagent #Role
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>genaiexp Artificial Intelligence plays a crucial role in predictive modeling by leveraging machine learning algorithms to analyze …
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.187 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Role of AI in Predictive Modeling #ai #artificialintelligence #machinelearning #aiagent #Role" href="/video/role-of-ai-in-predictive-modeling-ai-artificialintelligence-machinelearning-aiagent-role-1744971981187-88122/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">RUKA: Rethinking the Design of Humanoid Hands with Learning
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Dexterous manipulation is a fundamental capability for robotic systems, yet progress has been limited by hardware trade-offs between precision, compactness, strength, and affordability. Existing control methods impose compromises on hand designs and applications. However, learning-based approaches present opportunities to rethink these trade-offs, particularly to address challenges with tendon-driven actuation and low-cost materials. This work presents RUKA, a tendon-driven humanoid hand that is compact, affordable, and capable. Made from 3D-printed parts and off-the-shelf components, RUKA has 5 fingers with 15 underactuated degrees of freedom enabling diverse human-like grasps. Its tendon-driven actuation allows powerful grasping in a compact, human-sized form factor. To address control challenges, we learn joint-to-actuator and fingertip-to-actuator models from motion-capture data collected by the MANUS glove, leveraging the hand’s morphological accuracy. Extensive evaluations demonstrate RUKA’s superior reachability, durability, and strength compared to other robotic hands. Teleoperation tasks further showcase RUKA’s dexterous movements. The open-source design and assembly instructions of RUKA, code, and data are available at https://ruka-hand.github.io/.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.186 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to RUKA: Rethinking the Design of Humanoid Hands with Learning" href="/paper/ruka-rethinking-the-design-of-humanoid-hands-with-learning-1744971981186-492451/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="/tags/ml/page/9/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="/tags/ml/page/11/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="/">AI Digest</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

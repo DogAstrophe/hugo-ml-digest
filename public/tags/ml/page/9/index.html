@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Ml | AI Digest</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="/tags/ml/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="/tags/ml/index.xml">
+<link rel="alternate" hreflang="en" href="/tags/ml/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="/tags/ml/">
+  <meta property="og:site_name" content="AI Digest">
+  <meta property="og:title" content="Ml">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ml">
+<meta name="twitter:description" content="">
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="/" accesskey="h" title="AI Digest (Alt + H)">AI Digest</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/paper/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="/video/" title="Videos">
+                    <span>Videos</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    Ml
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Exploring Expert Failures Improves LLM Agent Tuning
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Large Language Models (LLMs) have shown tremendous potential as agents, excelling at tasks that require multiple rounds of reasoning and interactions. Rejection Sampling Fine-Tuning (RFT) has emerged as an effective method for finetuning LLMs as agents: it first imitates expert-generated successful trajectories and further improves agentic skills through iterative fine-tuning on successful, self-generated trajectories. However, since the expert (e.g., GPT-4) succeeds primarily on simpler subtasks and RFT inherently favors simpler scenarios, many complex subtasks remain unsolved and persistently out-of-distribution (OOD). Upon investigating these challenging subtasks, we discovered that previously failed expert trajectories can often provide valuable guidance, e.g., plans and key actions, that can significantly improve agent exploration efficiency and acquisition of critical skills. Motivated by these observations, we propose Exploring Expert Failures (EEF), which identifies beneficial actions from failed expert trajectories and integrates them into the training dataset. Potentially harmful actions are meticulously excluded to prevent contamination of the model learning process. By leveraging the beneficial actions in expert failures, EEF successfully solves some previously unsolvable subtasks and improves agent tuning performance. Remarkably, our approach achieved a 62% win rate in WebShop, outperforming RFT (53. 6%) and GPT-4 (35. 6%), and to the best of our knowledge, setting a new state-of-the-art as the first method to surpass a score of 0.81 in WebShop and exceed 81 in SciWorld.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.186 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Exploring Expert Failures Improves LLM Agent Tuning" href="/paper/exploring-expert-failures-improves-llm-agent-tuning-1744971981186-841288/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">fact about artificial intelligence chat GP and Sora
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p></p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.187 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;0 min</footer>
+  <a class="entry-link" aria-label="post link to fact about artificial intelligence chat GP and Sora" href="/video/fact-about-artificial-intelligence-chat-gp-and-sora-1744971981187-90661/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Here&amp;#39;s how artificial intelligence is helping to reunite lost pets
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>If you have pets, then you know the fear of your pet running off. Now, there’s new artificial intelligence tech aiming to make that …
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.187 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Here&#39;s how artificial intelligence is helping to reunite lost pets" href="/video/here-39-s-how-artificial-intelligence-is-helping-to-reunite-lost-pets-1744971981187-51641/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Imagine a future where artificial intelligence not only understands the intricacies of human
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Imagine a future where artificial intelligence not only understands the intricacies of human cognition but also unlocks …
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.187 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Imagine a future where artificial intelligence not only understands the intricacies of human" href="/video/imagine-a-future-where-artificial-intelligence-not-only-understands-the-intricacies-of-human-1744971981187-441701/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Inteligencia artificial #maltesedog #pets #ai #artificial intelligence
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p></p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.187 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;0 min</footer>
+  <a class="entry-link" aria-label="post link to Inteligencia artificial #maltesedog #pets #ai #artificial intelligence" href="/video/inteligencia-artificial-maltesedog-pets-ai-artificial-intelligence-1744971981187-139813/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">INTELIGENCIA ARTIFICIAL NATIVAMENTE NO GOOGLE PLANILHAS - COMO USAR?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Meu curso completo de Google Planilhas: https://curso.programacaoemexcel.com.br/?origem=youtube Centenas de Planilhas …
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.187 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to INTELIGENCIA ARTIFICIAL NATIVAMENTE NO GOOGLE PLANILHAS - COMO USAR?" href="/video/inteligencia-artificial-nativamente-no-google-planilhas-como-usar-1744971981187-842884/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">It&#39;s All Connected: A Journey Through Test-Time Memorization, Attentional Bias, Retention, and Online Optimization
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Designing efficient and effective architectural backbones has been in the core of research efforts to enhance the capability of foundation models. Inspired by the human cognitive phenomenon of attentional bias-the natural tendency to prioritize certain events or stimuli-we reconceptualize neural architectures, including Transformers, Titans, and modern linear recurrent neural networks as associative memory modules that learn a mapping of keys and values using an internal objective, referred to as attentional bias. Surprisingly, we observed that most existing sequence models leverage either (1) dot-product similarity, or (2) L2 regression objectives as their attentional bias. Going beyond these objectives, we present a set of alternative attentional bias configurations along with their effective approximations to stabilize their training procedure. We then reinterpret forgetting mechanisms in modern deep learning architectures as a form of retention regularization, providing a novel set of forget gates for sequence models. Building upon these insights, we present Miras, a general framework to design deep learning architectures based on four choices of: (i) associative memory architecture, (ii) attentional bias objective, (iii) retention gate, and (iv) memory learning algorithm. We present three novel sequence models-Moneta, Yaad, and Memora-that go beyond the power of existing linear RNNs while maintaining a fast parallelizable training process. Our experiments show different design choices in Miras yield models with varying strengths. For example, certain instances of Miras achieve exceptional performance in special tasks such as language modeling, commonsense reasoning, and recall intensive tasks, even outperforming Transformers and other modern linear recurrent models.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.185 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to It&#39;s All Connected: A Journey Through Test-Time Memorization, Attentional Bias, Retention, and Online Optimization" href="/paper/it-s-all-connected-a-journey-through-test-time-memorization-attentional-bias-retention-and-online-optimization-1744971981185-503680/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Long Range Navigator (LRN): Extending robot planning horizons beyond metric maps
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A robot navigating an outdoor environment with no prior knowledge of the space must rely on its local sensing to perceive its surroundings and plan. This can come in the form of a local metric map or local policy with some fixed horizon. Beyond that, there is a fog of unknown space marked with some fixed cost. A limited planning horizon can often result in myopic decisions leading the robot off course or worse, into very difficult terrain. Ideally, we would like the robot to have full knowledge that can be orders of magnitude larger than a local cost map. In practice, this is intractable due to sparse sensing information and often computationally expensive. In this work, we make a key observation that long-range navigation only necessitates identifying good frontier directions for planning instead of full map knowledge. To this end, we propose Long Range Navigator (LRN), that learns an intermediate affordance representation mapping high-dimensional camera images to `affordable’ frontiers for planning, and then optimizing for maximum alignment with the desired goal. LRN notably is trained entirely on unlabeled ego-centric videos making it easy to scale and adapt to new platforms. Through extensive off-road experiments on Spot and a Big Vehicle, we find that augmenting existing navigation stacks with LRN reduces human interventions at test-time and leads to faster decision making indicating the relevance of LRN. https://personalrobotics.github.io/lrn
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.186 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Long Range Navigator (LRN): Extending robot planning horizons beyond metric maps" href="/paper/long-range-navigator-lrn-extending-robot-planning-horizons-beyond-metric-maps-1744971981186-961685/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">MalMixer: Few-Shot Malware Classification with Retrieval-Augmented Semi-Supervised Learning
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Recent growth and proliferation of malware have tested practitioners ability to promptly classify new samples according to malware families. In contrast to labor-intensive reverse engineering efforts, machine learning approaches have demonstrated increased speed and accuracy. However, most existing deep-learning malware family classifiers must be calibrated using a large number of samples that are painstakingly manually analyzed before training. Furthermore, as novel malware samples arise that are beyond the scope of the training set, additional reverse engineering effort must be employed to update the training set. The sheer volume of new samples found in the wild creates substantial pressure on practitioners ability to reverse engineer enough malware to adequately train modern classifiers. In this paper, we present MalMixer, a malware family classifier using semi-supervised learning that achieves high accuracy with sparse training data. We present a domain-knowledge-aware data augmentation technique for malware feature representations, enhancing few-shot performance of semi-supervised malware family classification. We show that MalMixer achieves state-of-the-art performance in few-shot malware family classification settings. Our research confirms the feasibility and effectiveness of lightweight, domain-knowledge-aware data augmentation methods for malware features and shows the capabilities of similar semi-supervised classifiers in addressing malware classification issues.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.186 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to MalMixer: Few-Shot Malware Classification with Retrieval-Augmented Semi-Supervised Learning" href="/paper/malmixer-few-shot-malware-classification-with-retrieval-augmented-semi-supervised-learning-1744971981186-654360/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Mercedes dualtone maybach s680 v12 #ai #artificialintelligence #shortsfeed #shorts
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p></p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-18 10:26:21.187 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;0 min</footer>
+  <a class="entry-link" aria-label="post link to Mercedes dualtone maybach s680 v12 #ai #artificialintelligence #shortsfeed #shorts" href="/video/mercedes-dualtone-maybach-s680-v12-ai-artificialintelligence-shortsfeed-shorts-1744971981187-504231/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="/tags/ml/page/8/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="/tags/ml/page/10/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="/">AI Digest</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
